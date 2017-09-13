@@ -657,6 +657,26 @@ var testsForMultipleEditor = {
 			}, function() {
 				assert.areSame( '<p class="p">^foo</p>', bender.tools.getHtmlWithSelection( editor ), 'after drop' );
 			} );
+		},
+		'test drop after range end in readOnlyMode': function( editor, bot ) {
+			var evt = bender.tools.mockDropEvent();
+
+			bot.setHtmlWithSelection( '<p class="p">^foo</p>' );
+			editor.setReadOnly( true );
+
+			drag( editor, evt );
+
+			drop( editor, evt, {
+				dropContainer: editor.editable().getParent(),
+				dropOffset: 0,
+				expectedPasteEventCount: 0,
+				expectedDropPrevented: true
+			}, function() {
+				return true;
+			}, function() {
+				editor.setReadOnly( false );
+				assert.areSame( '<p class="p">foo</p>', editor.getData(), 'after drop' );
+			} );
 		}
 	},
 	testsForOneEditor = {
