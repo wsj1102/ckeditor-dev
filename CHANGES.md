@@ -1,6 +1,12 @@
 ﻿CKEditor 4 Changelog
 ====================
 
+## CKEditor 4.11.3
+
+Fixed Issues:
+
+* [#1986](https://github.com/ckeditor/ckeditor-dev/issues/1986): Fixed: cell properties dialog shows styles that are not allowed through allowedContent.
+
 ## CKEditor 4.11.2
 
 Fixed Issues:
