@@ -26,8 +26,12 @@ Fixed Issues:
 * [#2411](https://github.com/ckeditor/ckeditor-dev/issues/2411), [#2438](https://github.com/ckeditor/ckeditor-dev/issues/2438) Fixed: Apply numbered list option throw console error for speciffic markup.
 =======
 * [#1477](https://github.com/ckeditor/ckeditor-dev/issues/1477): Fixed: [Balloon Toolbar](https://ckeditor.com/cke4/addon/balloontoolbar) on destroy doesn't destroy its content.
+<<<<<<< HEAD
 * [#2395](https://github.com/ckeditor/ckeditor-dev/issues/2395) Fixed: focused input in dialog is scrolled out of viewport when soft keyboard appears.
 >>>>>>> 15d265028... Changelog: moved entry after rebase.
+=======
+* [#2395](https://github.com/ckeditor/ckeditor-dev/issues/2395) Fixed: focused input in [dialog](https://ckeditor.com/cke4/addon/dialog) is scrolled out of viewport when soft keyboard appears.
+>>>>>>> 71562b0da... Changelog: added dialog plugin link.
 
 Other Changes:
 
