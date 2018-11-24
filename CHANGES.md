@@ -6,6 +6,7 @@
 Fixed Issues:
 
 * [#2721](https://github.com/ckeditor/ckeditor-dev/issues/2721): Fixed: Sublist items are reversed when higher level list item is removed.
+* [#2565](https://github.com/ckeditor/ckeditor-dev/issues/2565): Fixed: Buttons in the [Editor Toolbar](https://ckeditor.com/cke4/addon/toolbar) are activated by clicking them with right mouse button.
 
 ## CKEditor 4.11.2
 
