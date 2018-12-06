@@ -380,7 +380,7 @@
 							return acc + emojiTpl.output( {
 									symbol: htmlEncode( item.symbol ),
 									id: htmlEncode( item.id ),
-									name: htmlEncode( item.id.replace( /::.*$/, ':' ).replace( /^:|:$/g, '' ).replace( /_/g, ' ' ) ),
+									name: getEmojiName( item ),
 									group: htmlEncode( item.group ),
 									keywords: htmlEncode( ( item.keywords || [] ).join( ',' ) )
 								} );
@@ -632,7 +632,7 @@
 						} );
 					data = arrTools.map( data, function( item ) {
 						return CKEDITOR.tools.extend( item, {
-							name: htmlEncode( item.id.replace( /::.*$/, ':' ).replace( /^:|:$/g, '' ).replace( /_/g, ' ' ) )
+							name: getEmojiName( item )
 						} );
 					} );
 					callback( data );
@@ -651,6 +651,10 @@
 
 		}
 	} );
+
+	function getEmojiName( item ) {
+		return htmlEncode( item.id.replace( /::.*$/, ':' ).replace( /^:|:$/g, '' ).replace( /_/g, ' ' ) );
+	}
 } )();
 
 /**
