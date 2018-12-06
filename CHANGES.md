@@ -3,6 +3,10 @@
 
 ## CKEditor 4.12
 
+New Features:
+
+* [#2583](https://github.com/ckeditor/ckeditor-dev/issues/2583): Changed [Emoji](https://ckeditor.com/cke4/addon/emoji) suggestion box to show matched emoji name instead of an ID.
+
 ## CKEditor 4.11.2
 
 Fixed Issues:
