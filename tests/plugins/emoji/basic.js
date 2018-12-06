@@ -183,6 +183,19 @@
 				assert.areSame( 1, autocomplete.model.data.length, 'Emoji result contains more than one result' );
 				objectAssert.areEqual( { id: ':collision:', symbol: '💥' }, { id: autocomplete.model.data[ 0 ].id, symbol: autocomplete.model.data[ 0 ].symbol }, 'Emoji result contains wrong result' );
 			} );
+		},
+
+
+		// (#2583)
+		'test emoji autocomplete panel displays name': function( editor, bot ) {
+			emojiTools.runAfterInstanceReady( editor, bot, function( editor, bot ) {
+				bot.setHtmlWithSelection( '<p>foo :collision:^</p>' );
+				editor.editable().fire( 'keyup', new CKEDITOR.dom.event( {} ) );
+
+				var element = CKEDITOR.document.findOne( '.cke_emoji-suggestion_item' );
+
+				assert.areEqual( element.$.innerText, '💥 collision' );
+			} );
 		}
 	};
 
