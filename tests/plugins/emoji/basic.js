@@ -185,7 +185,6 @@
 			} );
 		},
 
-
 		// (#2583)
 		'test emoji autocomplete panel displays name': function( editor, bot ) {
 			emojiTools.runAfterInstanceReady( editor, bot, function( editor, bot ) {
