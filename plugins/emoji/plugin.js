@@ -597,7 +597,7 @@
 					editor._.emoji.autocomplete = new CKEDITOR.plugins.autocomplete( editor, {
 						textTestCallback: getTextTestCallback(),
 						dataCallback: dataCallback,
-						itemTemplate: '<li data-id="{id}" class="cke_emoji-suggestion_item">{symbol} {id}</li>',
+						itemTemplate: '<li data-id="{id}" class="cke_emoji-suggestion_item">{symbol} {name}</li>',
 						outputTemplate: '{symbol}'
 					} );
 				}
@@ -630,6 +630,11 @@
 							// Comparing lowercased strings, because emoji should be case insensitive (#2167).
 							return item.id.toLowerCase().indexOf( emojiName ) !== -1;
 						} );
+					data = arrTools.map( data, function( item ) {
+						return CKEDITOR.tools.extend( item, {
+							name: htmlEncode( item.id.replace( /::.*$/, ':' ).replace( /^:|:$/g, '' ).replace( /_/g, ' ' ) )
+						} );
+					} );
 					callback( data );
 				}
 			} );
