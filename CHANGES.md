@@ -8,6 +8,7 @@ API Changes:
 * [#1496](https://github.com/ckeditor/ckeditor-dev/issues/1496): [Balloon Toolbar](https://ckeditor.com/cke4/addon/balloontoolbar) exposed methods [`CKEDITOR.ui.balloonToolbar.reposition`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_ui_balloonToolbar.html#reposition) and [`CKEDITOR.ui.balloonToolbarView.reposition`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_ui_balloonToolbarView.html#reposition).
 * [#2021](https://github.com/ckeditor/ckeditor-dev/issues/2021): Add [`CKEDITOR.dom.documentFragment.find`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_dom_documentFragment.html#method-find) and [`CKEDITOR.dom.documentFragment.findOne`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_dom_documentFragment.html#method-findOne) methods.
 * [#2700](https://github.com/ckeditor/ckeditor-dev/issues/2700): Added the [`CKEDITOR.tools.array.find`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_tools_array.html#method-find) function.
+* [#2307](https://github.com/ckeditor/ckeditor-dev/issues/2307): Added event support for [Menu](https://ckeditor.com/cke4/addon/menu) plugin by exposing methods: [`CKEDITOR.menu.fire`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_menu.html#method-fire), [`CKEDITOR.menu.on`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_menu.html#method-on) and [`CKEDITOR.menu.once`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_menu.html#method-once). Additionally menu instances will fire `hide` event when hidden.
 
 ## CKEditor 4.11.3
 
