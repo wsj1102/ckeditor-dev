@@ -13,7 +13,6 @@ API Changes:
 * [#2021](https://github.com/ckeditor/ckeditor-dev/issues/2021): Add [`CKEDITOR.dom.documentFragment.find`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_dom_documentFragment.html#method-find) and [`CKEDITOR.dom.documentFragment.findOne`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_dom_documentFragment.html#method-findOne) methods.
 * [#2700](https://github.com/ckeditor/ckeditor-dev/issues/2700): Added the [`CKEDITOR.tools.array.find`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_tools_array.html#method-find) function.
 
-
 ## CKEditor 4.11.2
 
 Fixed Issues:
