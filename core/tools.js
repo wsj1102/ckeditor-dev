@@ -1882,7 +1882,7 @@
 				 *		'border-width': '1px 2px 3px 4px'
 				 * };
 				 *
-				 * console.log( CKEDITOR.tools.style.parse.splitBorderStyles( styles ) );
+				 * console.log( CKEDITOR.tools.style.parse.splitBorder( styles ) );
 				 * // Logs:
 				 * // {
 				 * // 	'border-top': '1px solid red',
@@ -1898,7 +1898,7 @@
 				 * 	},
 				 * 	fallback = { color: 'red' };
 				 *
-				 * console.log( CKEDITOR.tools.style.parse.splitBorderStyles( missingColorStyles, fallback ) );
+				 * console.log( CKEDITOR.tools.style.parse.splitBorder( missingColorStyles, fallback ) );
 				 * // Logs:
 				 * // {
 				 * // 	'border-top': '2px solid red',
@@ -1923,7 +1923,7 @@
 				 * @returns {String} return.border-left Border left style.
 				 * @member CKEDITOR.tools.style.parse
 				 */
-				splitBorderStyles: function( styles, fallback ) {
+				splitBorder: function( styles, fallback ) {
 					var types = [ 'width', 'style', 'color' ];
 
 					fallback = fallback || {};
