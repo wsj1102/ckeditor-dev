@@ -6,6 +6,7 @@
 Fixed Issues:
 
 * [#2721](https://github.com/ckeditor/ckeditor-dev/issues/2721): Fixed: Sublist items are reversed when higher level list item is removed.
+* [#1479](https://github.com/ckeditor/ckeditor-dev/issues/1479): Fixed: Justification for styled content in BR mode was disabled.
 
 ## CKEditor 4.11.2
 
