@@ -657,7 +657,7 @@ var testsForMultipleEditor = {
 			}, function() {
 				assert.areSame( '<p class="p">^foo</p>', bender.tools.getHtmlWithSelection( editor ), 'after drop' );
 			} );
-		},
+		}, // (#808)
 		'test drop after range end in readOnlyMode': function( editor, bot ) {
 			var evt = bender.tools.mockDropEvent();
 
